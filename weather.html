@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #F0F2F5;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: grid;
+            place-content: center;
+        }
+
+        li {
+            list-style-type: none;
+        }
+        
+        .container {
+            margin-top: 20px;
+            background-color: #ffffff;
+            border-radius: 1em;
+            width: 400px;
+            height: auto;
+            text-align: center;
+        }
+
+        .weather {
+            margin-top: 10px;
+            background-color: #ffffff;
+            display: flex;
+            place-content: center;
+            border-radius: 1em;
+
+        }
+
+        .box {
+            display: flex;
+            list-style-type: none;
+            place-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="head">Kathmandu</h1>
+    </div>
+
+    <div class="weather">
+        <div class="box">
+            <ul class="list">
+                <li>Temperature : <span id="temp"></span></li>
+                <li>Min temperature : <span id="min_temp" °C></span></li>
+                <li>Max temperature : <span id="max_temp"></span></li>
+                <li>feels like : <span id="feels_like"></span>°C</li>
+                <li>Cloud PCT : <span id="cloud_pct"></span></li>
+                <li>humidity : <span id="humidity"></span></li>
+                <li>wind speed : <span id="wind_speed"></span></li>
+                <li>wind degrees : <span id="wind_degrees"></span></li>
+                <li>sunrise : <span id="sunrise"></span></li>
+                <li>sunset : <span id="sunset"></span></li>
+                <br>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
